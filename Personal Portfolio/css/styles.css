@@ -1,0 +1,307 @@
+﻿/*
+Author: Jesse Rembert
+Date: 3/7/2025
+File Name: styles.css
+*/
+
+/*CSS Reset */
+body, header, nav, main, footer, img, h1,h3,ul, figure,aside,figcaption{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+
+/* Style rules for body and images*/
+body{
+	background-color: #9ADAE4;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*Style rules for mobile viewport*/
+
+/* Show mobile class, hide tablet-desktop*/
+.mobile{
+    display:block;
+}
+
+.tablet-desk{
+    display:none;
+}
+
+
+/*Style rules for header*/
+
+header img{
+    margin: 0 auto;
+}
+
+/* Style rules for navigation area*/
+nav{
+    background-color:#0C8B9F;
+	padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li{
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child{
+    border-top: none;
+}
+
+nav li a{
+	display: block;
+	color: #f6eee4;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+/* Style rules for main content*/
+
+main {
+	padding: 2%;
+	font-family: "Times New Roman", Arial, sans-seriff;
+    font-size:1.15em;
+    text-align: center;
+}
+
+.tel-link {
+    background-color:#0C8B9F;
+    padding: 2%;
+    margin:0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.round{
+    border-radius: 5px;
+}
+
+aside{
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #0C8B9F;
+}
+
+figure{
+    border: 4px solid;
+    box-shadow: 6px 6px 10px #0C8B9F;
+    max-width: 800px;
+    margin: 2% auto;
+}
+
+figcaption{
+    padding: 2%;
+    border-top: 4px solid #0C8B9F;
+}
+
+
+main h2{
+	padding-top: 2%;
+}
+
+.link{
+	color: #4d3319;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.action{
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* Style rules for footer content */
+
+footer {
+	text-align: center;
+	font-size: 0.85em;
+	background-color: #0C8B9F;
+	color: #f6eee4;
+	padding: 1% 0%;
+}
+
+footer a{
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+.francois-one-regular {
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Style rules for form elements */
+fieldset, input, textarea{
+    margin-bottom:2%;
+}
+
+fieldset legend{
+    font-weight:bold;
+    font-size:1.25em;
+}
+
+label{
+    display:block;
+    padding-top:2%;
+}
+
+#submit{
+    margin:0 auto;
+    display: block;
+    padding: 2%;
+    background-color: #0C8B9F;
+    color: #f6eee4;
+    font-size:1.25em;
+    border-radius:10px;
+}
+
+/*Media query for tablet*/
+@media only screen and (min-width:600px), print{
+    /*show tabdesk hide mobile*/
+    .tablet-desk{
+        display:block;
+    }
+    
+    .mobile{
+        display:none;
+    }
+    
+    /*Tablet Viewport: Style rules for nav area*/
+    nav li{
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a{
+        padding: 0.5em;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    
+    aside{
+        grid-column: 1 / span 2;
+    }
+    
+    /*tablet Style rules for form elements */
+    form{
+     width:70%;
+     margin: 0 auto;
+    }
+    /*Tablet Viewport for main area*/
+    main{
+    text-align: left;
+    }
+    
+    /*Tablet style rules for table*/
+    table{
+    width: 85%;
+    border: 1px solid #0C8B9F;
+    border-collapse:collapse;
+    margin: 0px auto;
+    }
+    
+    caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding:1%;
+    }
+    
+    th, td{
+    border: 1px solid #000000;
+    padding:1%;
+    }
+    
+    th{
+    background-color: #0C8B9F;
+    color: #fff;
+    font-size: 1.15em;
+    }
+    /*Tablet Viewport: Style rules for form elements*/
+    form{
+        width: auto;
+    }
+    
+    .form-grid{
+        display:grid;
+        grid-template-columns: auto auto;
+        gap:20px;
+    }
+    
+    .btn{
+        grid-column: 1/span 2;
+    }
+    
+    
+}
+
+    /*Media query for Desktop Viewport*/
+@media only screen and (min-width: 1000px),print{
+    /*DesktopViewport: Style rules for nav are.*/    
+    nav li{
+        font-size: 1.5em;
+    }
+    
+    nav li a{
+        padding-top:0.5em;  
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    nav li a:hover{
+        color: #2a1f14;
+        background-color:#FFFFFF;
+    }
+    .grid{
+    grid-template-columns: auto auto auto;
+    }
+}
+
+/*Media query for large desktop viewports*/
+@media only screen and (min-width: 1921px){
+    body{
+        background: linear-gradient(#f6eee4, #0C8B9F);
+    }
+    
+    #wrapper{
+        width:1920px;
+        margin-top:0;
+        margin-bottom:0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main{
+    background:white;
+    }
+    
+    .grid{
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    aside{
+        grid-column: 1/span 4;
+        font-size: 3em;
+    }
+}
